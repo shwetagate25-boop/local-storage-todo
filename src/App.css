@@ -1,0 +1,121 @@
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.todo-card {
+  width: 100%;
+  max-width: 650px;
+  background: white;
+  padding: 35px;
+  border-radius: 22px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+}
+
+.todo-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  color: #8065d8;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.todo-header h1 {
+  font-size: 32px;
+  color: #29233d;
+  margin: 12px 0;
+}
+
+.description {
+  color: #888;
+  font-size: 14px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.stat-box {
+  background: #f6f3ff;
+  padding: 16px 8px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.stat-box h2 {
+  color: #7655d5;
+  font-size: 25px;
+}
+
+.stat-box p {
+  color: #777;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 25px 0 18px;
+}
+
+.filter-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 9px;
+  background: #f2f0f8;
+  color: #666;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.filter-buttons button.active-filter {
+  background: #7655d5;
+  color: white;
+}
+
+.todo-footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.todo-footer p {
+  color: #7655d5;
+  font-size: 14px;
+}
+
+.todo-footer span {
+  display: block;
+  color: #999;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+@media (max-width: 500px) {
+  .todo-card {
+    padding: 22px 16px;
+  }
+
+  .todo-header h1 {
+    font-size: 25px;
+  }
+
+  .stats {
+    gap: 7px;
+  }
+}
+
